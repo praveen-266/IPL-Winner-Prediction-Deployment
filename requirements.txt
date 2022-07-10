@@ -1,6 +1,5 @@
 charset-normalizer==2.1.0
 click @ file:///C:/ci/click_1646056762388/work
-colorama @ file:///C:/Windows/TEMP/abs_9439aeb1-0254-449a-96f7-33ab5eb17fc8apleb4yn/croots/recipe/colorama_1657009099097/work
 filelock==3.7.1
 Flask @ file:///opt/conda/conda-bld/flask_1648041541647/work
 gunicorn==20.1.0
