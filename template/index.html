@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>IPL Winner Prediction</title>
+        <link rel="stysheet" href="..//static/style.css">
+    </head>
+
+    <body>
+        <!---Website Title-->
+        <div class="container">
+            <h2 class="container-heading"><span class="heading-font">IPL Winner Prediction</span></h2>
+            <div class="description"><p> A Machine Learning Web App.</p></div>
+        </div>
+
+        <!---Text Area-->
+        <div class="ml-container">
+            <form action="{{ url_for('predict') }}" method="POST">
+                <!--Bating Team DropDown--->
+            <select class="form-input" name="BattingTeam">
+
+                <option value="none">---Select a Batting team ----</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Rajasthan Royal">Rajasthan Royal</option>
+                <option value="Punjab Kings">Kings XI Punjabs</option>
+                <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                <option value="Delhi Capitals">Delhi Capitals</option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                <option value="Lucknow Super Giants">Lucknow Super Giants</option>
+                <option value="Gujarat Titans">Gujarat Titans</option>
+            </select><br>
+
+            <!---Bowling Team Dropdown-->
+            <select class="form-input" name="BowlingTeam">
+                <option value="none">---Select a Bowling team ----</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Rajasthan Royal">Rajasthan Royal</option>
+                <option value="Kings XI Punjab">Kings XI Punjabs</option>
+                <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                <option value="Delhi Capitals">Delhi Capitals</option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                <option value="Lucknow Super Giants">Lucknow Super giants</option>
+                <option value="Gujarat Titans">Gujarat Titans</option>
+            </select><br>
+
+            <select class="form-input" name="City">
+                <option value="none">-----Select  a City </option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Pune">Pune</option>
+                <option value="dubai">dubai</option>
+                <option value="Sharjah">Sharjah</option>
+                <option value="Abu Dhabi">Abu Dhabi</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Visakhpatnam">visakhapatnam</option>
+                <option value="Chandigarh">Chandigarh</optgroup>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Indore">Indore</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Raipur">Raipur</option>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Cuttack">Cuttack</option>
+                <option value="Dharamsala">Dharamsala</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Johannesburg">Johannesburg</option>
+                <option value="Centurion">Centurion</option>
+                <option value="Durban">Durban</option>
+                <option value="Bloemfontein">Bloemfontein</option>
+                <option value="Port Elizabeth">Port Elizabeth</option>
+                <option value="Kimberly">Kimberly</option>
+                <option value="East London">East London</option>
+                <option value="Cape Town">Cape Town</option>
+            </select><br>
+            <input class="form-input" type="text" name="Target" placeholder="Target eg.169"><br>
+            <input class="form-input" type="text" name="runs_left" placeholder="'Runs Left eg.110"><br>
+            <input class="form-input" type="text" name="wickets_left" placeholder="Wickets Left eg.5"><br>
+            <input class="form-input" type="text" name="balls_left" placeholder="Balls Left eg.89"><br>
+            <input class="form-input" type="text" name="current_run_rate" placeholder="Current Run Rate eg.6.9"><br>
+            <input class="form-input" type="text" name="required_run_rate" placeholder="Required run Rate eg.11.0"><br>
+
+                <input type="submit" class="my-cta-button" value="predict">
+            </form> 
+        </div>
+
+        <!---Footer-->
+        <div class="footer">
+            <div class="contact">
+                <a target="_blank" href="https://github.com/praveen-266/IPL Winner Prediction"><i class="fab fa-github fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/k-praveen-8385231a6"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
